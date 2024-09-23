@@ -3,7 +3,7 @@
 # Output:       Valid date is printed or user is alerted that an invalid date was entered.
 
 validDate = True
-MIN_YEAR = 0
+MIN_YEAR = 1874
 MIN_MONTH = 1
 MAX_MONTH = 12
 MIN_DAY = 1
@@ -15,6 +15,9 @@ day = None
 
 # Get the year, then the month, then the day
 # housekeeping()
+month = int(input("Enter the month: "))
+day = int(input("Enter the day: "))
+year = int(input("Enter the year: "))
 
 # Check to be sure date is valid
 
@@ -29,6 +32,6 @@ elif int(day) < MIN_DAY or int(day) > MAX_DAY: # invalid day
 
 # endOfJob()
 if validDate == True:
-    # Output statement
+    print(str(month) + "/" + str(day) + "/" + str(year) + " is a valid date")
 else:
-    # Output statement
+    print(str(month) + "/" + str(day) + "/" + str(year) + " is an invalid date")
