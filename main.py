@@ -9,10 +9,6 @@ MAX_MONTH = 12
 MIN_DAY = 1
 MAX_DAY = 31
 
-year = None
-month = None
-day = None
-
 # Get the year, then the month, then the day
 # housekeeping()
 month = int(input("Enter the month: "))
